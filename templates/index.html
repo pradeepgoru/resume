@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Pradeep Goru - DevOps Engineer{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="text-center">
+        <!-- Profile Image -->
+        <img src="/static/images/pradeep.jpg" alt="Pradeep Goru" 
+             class="rounded-circle mb-4 profile-main-img"
+             width="200" height="200">
+
+        <h1 class="display-4">Pradeep Goru</h1>
+        <p class="lead text-primary mb-4">
+            <i class="fas fa-certificate text-warning"></i> Certified Kubernetes Administrator (CKA)
+        </p>
+
+        <!-- Professional Tagline -->
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p class="lead">
+                    Senior DevOps Engineer delivering resilient cloud solutions and Kubernetes-driven architectures across AWS, Azure, and GCP, with a focus on automation and reliability.
+                </p>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <a href="/resume" class="btn btn-primary btn-lg px-4">
+                <i class="fas fa-file-alt me-2"></i>View Resume
+            </a>
+            <a href="/contact" class="btn btn-outline-primary btn-lg px-4">
+                <i class="fas fa-paper-plane me-2"></i>Contact Me
+            </a>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="mt-5">
+            <h3 class="h4 mb-3">Explore My Work</h3>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <a href="/blog" class="btn btn-sm btn-outline-secondary">
+                    <i class="fas fa-blog me-1"></i> Technical Blogs
+                </a>
+                <a href="https://github.com/pradeepgoru" target="_blank" class="btn btn-sm btn-outline-secondary">
+                    <i class="fab fa-github me-1"></i> GitHub Projects
+                </a>
+                <a href="/resume#experience" class="btn btn-sm btn-outline-secondary">
+                    <i class="fas fa-briefcase me-1"></i> Work Experience
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

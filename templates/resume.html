@@ -1,0 +1,185 @@
+<!-- templates/resume.html -->
+{% extends "base.html" %}
+
+{% block title %}Resume - Pradeep Goru{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <!-- Header -->
+    <div class="text-center mb-4">
+        <h1>Pradeep Goru, <span class="text-primary">CKA</span></h1>
+        <p class="lead">Senior DevOps Engineer | Kubernetes Specialist</p>
+        <p>
+            Hyderabad, India | 
+            <a href="mailto:pradeep.goru408@gmail.com">pradeep.goru408@gmail.com</a> | 
+            +91 8500589320 |
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </p>
+        <button onclick="window.print()" class="btn btn-outline-secondary me-2">
+            <i class="fas fa-print"></i> Print Resume
+        </button>
+        <a href="/static/resume.pdf" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download PDF
+        </a>
+    </div>
+
+    <!-- Career Objective -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="card-title">Career Objective</h2>
+            <p class="card-text">
+                To contribute my expertise in Linux/Unix administration, cloud infrastructure, and automation to a growth-focused organization, while continuously improving processes and driving efficiency.
+            </p>
+        </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="card-title">Professional Summary</h2>
+            <p class="card-text">
+                An outstanding, self-motivated IT professional with 6+ years of experience in DevOps, SRE, and cloud-native technologies. Skilled in Kubernetes, CI/CD pipelines, infrastructure automation, and multi-cloud environments (AWS, Azure, DigitalOcean, GCP). Proven ability in building scalable solutions, troubleshooting complex production issues, and driving platform reliability.
+            </p>
+        </div>
+    </div>
+
+    <!-- Technical Skills Table -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="card-title">Technical Expertise</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr><th>Cloud</th><td>AWS, Azure (AKS), GCP, DigitalOcean</td></tr>
+                        <tr><th>IaC</th><td>Terraform, Ansible</td></tr>
+                        <tr><th>Kubernetes</th><td>EKS, AKS, GKE, Rancher, Helm <span class="badge bg-primary">CKA Certified</span></td></tr>
+                        <tr><th>CI/CD</th><td>Tekton, ArgoCD, GitHub Actions, GitLab CI, Jenkins, Azure DevOps</td></tr>
+                        <tr><th>Containers</th><td>Docker, Apko, Melange</td></tr>
+                        <tr><th>Monitoring</th><td>Prometheus, Grafana, ELK, TICK, TIG, OpenTelemetry</td></tr>
+                        <tr><th>Security</th><td>Kyverno, OPA Gatekeeper, Trivy, Falco</td></tr>
+                        <tr><th>Tracing</th><td>Tracetest, Jaeger, Tempo, SigNoz</td></tr>
+                        <tr><th>Languages</th><td>Shell, Python (basics)</td></tr>
+                        <tr><th>OS & Tools</th><td>Linux/Unix, Git, Nginx</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Professional Experience -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="card-title">Professional Experience</h2>
+            
+            <!-- GSPANN -->
+            <div class="mb-4">
+                <h3>GSPANN Technologies, Inc</h3>
+                <h4>Site Reliability Engineer - Shift Lead</h4>
+                <p class="text-muted">Jan 2024 – Present* | Hyderabad</p>
+                <ul>
+                    <li>Serving as Shift Lead across multiple SRE engagements, including Apple Marcom and TailoredBrands.</li>
+                    <li>Managing infrastructure operations such as on-prem Rancher Kubernetes clusters, Jenkins, Artifactory, Jira, and Confluence.</li>
+                    <li>Administering UC4 (Automic Automation) and supporting Jira/Confluence service requests including user/project management.</li>
+                    <li>Leading the migration of UC4 from traditional Linux VM-based deployments to Google Kubernetes Engine (GKE).</li>
+                    <li>Performing infrastructure upgrades and architectural improvements — including POCs with Kubeadm as an alternative to Rancher.</li>
+                    <li>Driving platform reliability through proactive monitoring, incident response, and service improvement initiatives.</li>
+                    <li>Performed upgrades for core infrastructure components: Rancher, Jenkins, Artifactory, and Git.</li>
+                </ul>
+
+                <h5>Project: TailoredBrands*</h5>
+                <ul>
+                    <li>Administering UC4 (Automic Automation) for workload orchestration.</li>
+                    <li>Handling Confluence and Jira administration, including user provisioning, access control, and project management.</li>
+                    <li>Leading migration of UC4 deployment from Linux VMs to Google Kubernetes Engine (GKE) for scalability and resilience.</li>
+                    <li>Supporting platform reliability, automation, and ongoing operational improvements.</li>
+                </ul>
+
+                <h5>Project: Apple - Marcom</h5>
+                <ul>
+                    <li>Ensured availability and performance of tooling that powers Apple's internal marketing and content pipelines.</li>
+                    <li>Supported CI/CD workflows and internal developer collaboration tools.</li>
+                    <li>Led initiatives to improve platform resilience and developer experience.</li>
+                </ul>
+            </div>
+
+            <!-- AppsetekCorp -->
+            <div class="mb-4">
+                <h3>AppsetekCorp IT Pvt Ltd</h3>
+                <h4>Senior DevOps Engineer</h4>
+                <p class="text-muted">Sep 2022 – Dec 2023 | Hyderabad</p>
+                <ul>
+                    <li>Primarily focused on building robust CI/CD automation with Tekton, supporting Kubernetes-native workflows.</li>
+                    <li>Led the integration of Tracetest to enable trace-based testing and enhance debugging capabilities.</li>
+                    <li>Implemented observability solutions using Prometheus, Grafana, and alerting systems for Kubernetes workloads.</li>
+                    <li>Developed and managed Terraform modules for infrastructure provisioning across AWS, Azure, and DigitalOcean.</li>
+                    <li>Followed GitOps practices using ArgocD and GitLab CI to streamline continuous delivery.</li>
+                </ul>
+                <h5>Project: Capten (Client: Intelops)</h5>
+                <ul>
+                    <li>Developed and maintained CI/CD pipelines using Tekton for ML workloads and microservices.</li>
+                    <li>Integrated Apko and Melange for secure and minimal container image builds.</li>
+                    <li>Introduced Tracetest to validate application health and behavior through distributed traces.</li>
+                </ul>
+                <h5>Project: Soibev SaaS (Client: Intelops)</h5>
+                <ul>
+                    <li>Architected a self-service SaaS platform to provision Kubernetes clusters across multiple clouds with pre-configured system tools.</li>
+                    <li>Automated end-to-end cluster creation using Terraform integrated with GitLab CI.</li>
+                    <li>Enabled UI-driven workflows where users could select desired tools and configurations.</li>
+                    <li>Implemented observability stacks including Prometheus, Grafana, and logging/alerting tools.</li>
+                    <li>Integrated Kyverno for enforcing security and policy controls across clusters.</li>
+                </ul>
+            </div>
+
+            <!-- Radiant Soft Solutions -->
+            <div class="mb-4">
+                <h3>Radiant Soft Solutions & Scriptbees IT Pvt Ltd</h3>
+                <h4>DevOps Engineer</h4>
+                <p class="text-muted">Aug 2018 – Aug 2022 | Hyderabad</p>
+                <ul>
+                    <li>Migrated monolithic applications to containerized microservices.</li>
+                    <li>Built and maintained CI/CD pipelines using GitLab.</li>
+                    <li>Deployed resilient systems across AWS, Azure, and DigitalOcean.</li>
+                    <li>Automated provisioning with Ansible and Terraform.</li>
+                </ul>
+                <h5>Project: VolunteerMark (Client: Scriptbees)</h5>
+                <ul>
+                    <li>Set up CI/CD pipelines for app deployment on DigitalOcean.</li>
+                    <li>Migrated to microservices for better scalability.</li>
+                    <li>Implemented DR using Ansible and Terraform.</li>
+                </ul>
+                <h5>Project: WonderMe (Client: Scriptbees)</h5>
+                <ul>
+                    <li>Migrated infrastructure to Kubernetes.</li>
+                    <li>Managed CI/CD via GitLab, used Helm for app packaging.</li>
+                    <li>Implemented observability and disaster recovery strategies.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certifications & Education -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">Certifications</h2>
+                    <ul>
+                        <li>Certified Kubernetes Administrator (CKA) - Linux Foundation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">Education</h2>
+                    <p>
+                        <strong>B.Tech in Electronics & Communication Engineering (ECE)</strong><br>
+                        Rajiv Gandhi University of Knowledge Technologies (RGUKT), Nuzvid | 2015 - 2019
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

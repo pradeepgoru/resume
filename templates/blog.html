@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}My Blogs{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center">My Blog Posts</h1>
+
+    <!-- Blog List -->
+    <div class="row mt-4">
+        <!-- Blog 1 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3>How I Built This Portfolio</h3>
+                    <p class="text-muted">Published: April 2024</p>
+                    <p>A step-by-step guide to creating a Flask-based portfolio.</p>
+                    <a href="#" class="btn btn-sm btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Python Tips for Beginners</h3>
+                    <p class="text-muted">Published: March 2024</p>
+                    <p>10 Python tricks I wish I knew earlier.</p>
+                    <a href="#" class="btn btn-sm btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
